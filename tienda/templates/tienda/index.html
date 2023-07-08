@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+ {% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="stylesheet" href=c>
+        <title>Taller Mecanico- Rayo McKeen</title>
+       
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'tienda/img/favicon.ico'" %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'tienda/css/styles.css'" %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <div class "row">
+            <img src="{% static 'tienda/img/header-bg.jpg'%}" alt="..." />
+        </div>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="{% static 'tienda/img/navbar-logo.svg' %}" width=200 height=150  alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Especialidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Equipo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="file:///C:/Users/JohnKing/deskpot/misProyectos/tienda/templates/tienda/registro.html">Registro</a></li>
+                        <li class="nav-item"><a class="nav-link" href="file:///C:/Users/JohnKing/Downloads/maqueta%20agencia/Taller%20RAYO%20MCKEEN/compras.html">Compras</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Bienvenido a Rayo McKeen</div>
+                <div class="masthead-heading text-uppercase">Un gusto en conocerte!</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Di que Necesitas!</a>
+            </div>
+        </header>
+       
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Servicios</h2>
+                    <h3 class="section-subheading text-muted">Distintos servicios multimarca.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Mantenciones.</h4>
+                        <p class="text-muted">Aca puede revisar nuestra infinidad trabajos a distintos modelos.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Swap Motores</h4>
+                        <p class="text-muted">Cambio de motores y potenciacion en dyno.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Puesto a punto</h4>
+                        <p class="text-muted">Puesta a punto de motores multimarca ..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Especialidades</h2>
+                    <h3 class="section-subheading text-muted">Estas son unos de nuestros trabajos realizados a nuestros clientes calidad y satisfaccion..</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'tienda/img/portfolio/1.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Servicios Generales Mecanicos</div>
+                                <div class="portfolio-caption-subheading text-muted">Todo tipo de Vehiculos.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'tienda/img/portfolio/2.jpg'%}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Autos de Lujo</div>
+                                <div class="portfolio-caption-subheading text-muted">Especialistas en Ferrari F40.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'tienda/img/portfolio/3.jpg'%}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Autos 4x4 y SUV</div>
+                                <div class="portfolio-caption-subheading text-muted">Especialistas en Ford F-150 Raptor. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'tienda/img/portfolio/4.jpg'%}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Autos Clásicos</div>
+                                <div class="portfolio-caption-subheading text-muted">Especialistas en Ford Mustang 289 Coupe.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'tienda/img/portfolio/5.jpg'%}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Autos Americanos</div>
+                                <div class="portfolio-caption-subheading text-muted">Especialistas en Dodge Challenger R/T.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'tienda/img/portfolio/6.jpg'%}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Autos Personalizados</div>
+                                <div class="portfolio-caption-subheading text-muted">Tunning y body shop</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Acerca de</h2>
+                    <h3 class="section-subheading text-muted">Conoce nuestra historia.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'tienda/about/1.jpg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2018-2019</h4>
+                                <h4 class="subheading">Nuestros humildes comienzos</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Los inicios del taller mecánico de Rayo McKeen no fueron fáciles. Durante los primeros meses, tuvo que hacer frente a varios desafíos, desde reparaciones complejas hasta conflictos con algunos clientes insatisfechos. Sin embargo, Rayo McKeen no se rindió. Continuó trabajando duro y mejorando su taller día a día. Pronto, comenzó a ganar reputación en la zona por su excelente servicio al cliente y su habilidad para resolver los problemas mecánicos más difíciles.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'tienda/about/2.jpg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Marzo 2020</h4>
+                                <h4 class="subheading">De un pequeño taller, a una agencia mecanica prestigiosa.</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Con el tiempo, el taller mecánico RayoMcKeen se convirtió en uno de los más exitosos de la zona. Clientes de todas partes acudían a su taller para recibir el mejor servicio mecánico en la región.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'tienda/about/3.jpg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Diciembre 2021</h4>
+                                <h4 class="subheading">Transicion a servicio completo.</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted"></p>Hoy en día, Rayo McKeen es un empresa exitosa y orgullosa. Ha logrado hacer realidad su sueño gracias a su pasión por la mecánica y su determinación para superar todos los obstáculos que se le presentaron en el camino.</div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'tienda/about/4.jpg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Mayo 2023</h4>
+                                <h4 class="subheading">Proceso de expansion</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Finalmente, después de mucho trabajo, el taller mecánico Rayo McKeen abrió sus puertas en otras ciudades. Al principio, no fue fácil. Hubo desafíos como adaptarse a la nueva competencia, contratar y entrenar nuevo personal, establecer nuevas relaciones con proveedores y clientes. Sin embargo, con la misma dedicación y pasión que lo había llevado al éxito en la ciudad original, El equipo logró superar todos los obstáculos. Su negocio comenzó a crecer y expandirse a más ciudades, y pronto se convirtió en una cadena de talleres mecánicos exitosa. Hoy en día, el taller mecánico Rayo McKeen es una marca reconocida en varias ciudades del país. Su éxito se debe en gran parte a su enfoque en la calidad, el servicio al cliente y su habilidad para adaptarse y crecer con el tiempo.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Se parte
+                                <br />
+                                de nuestra
+                                <br />
+                                Historia!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Nuestro Increible equipo</h2>
+                    <h3 class="section-subheading text-muted">Conoce nuestro exitoso equipo y lideres.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'tienda/team/1.jpg'%}" alt="..." />
+                            <h4>Parveen Anand</h4>
+                            <p class="text-muted">Jefe de taller</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'tienda/team/2.jpg'%}" alt="..." />
+                            <h4>John Petersen</h4>
+                            <p class="text-muted">Primer mecanico</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'tienda/team/3.jpg'%}" alt="..." />
+                            <h4>Larry Parker</h4>
+                            <p class="text-muted">Ayudante de mecanico</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"></p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'tienda/logos/microsoft.svg'%}" alt="..." aria-label="Microsoft Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'tienda/logos/google.svg'%}" alt="..." aria-label="Google Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'tienda/logos/facebook.svg'%}" alt="..." aria-label="Facebook Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'tienda/logos/ibm.svg'%}" alt="..." aria-label="IBM Logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contactanos!</h2>
+                    <h3 class="section-subheading text-muted">Envianos tus consultas o dudas.</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Su nombre *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Nombre requerido.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Su email *" data-sb-validations="se requiere,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">Se requiere email</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email no es valido.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Su numero de contacto *" data-sb-validations="requerido" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">se necesita un numero de contacto.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Escribenos un mensaje *" data-sb-validations="requerido"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Mensaje requerido.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Completado exitosamente!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al enviar mensaje!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar Mensaje</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Nuestro sitio web 2023</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Terminos de privacidad</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terminos de uso</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'tienda/img/close-icon.svg'%}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Servicios Generales Mecanicos</h2>
+                                    <p class="item-intro text-muted">Solucionamos cualquier falla mecanica y electrica de cualquier vehiculo.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'tienda/img/portfolio/1.jpg'%}" alt="..." />
+                                    <p>Los mecánicos de nuestro taller mecánico utilizan herramientas y equipos especializados para encontrar el origen de la falla en el vehículo y realizar las reparaciones necesarias para solucionarla. Esto incluye el diagnóstico y reparación de problemas eléctricos, mecánicos, de transmisión, de frenos, de suspensión, entre otros.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Encargado:</strong>
+                                            Parveen Anand
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                           Auto Sedan
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'tienda/img/close-icon.svg'%}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Autos de Lujo</h2>
+                                    <p class="item-intro text-muted">Especialistas en autos de alta gamma.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'tienda/img/portfolio/2.jpg'%}" alt="..." />
+                                    <p>Los mecánicos de nuestro taller mecánico especializado en automóviles de alta gama utilizan herramientas y equipos especializados de última generación para realizar diagnósticos precisos y solucionar cualquier tipo de falla mecánica o eléctrica que pueda presentarse en estos vehículos. Además, en nuestros talleres mecánicos cuentan con repuestos y piezas originales de alta calidad, lo que permite garantizar que las reparaciones se realicen con materiales de la mejor calidad, asegurando que los vehículos queden en óptimas condiciones.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Marca:</strong>
+                                            Ferrari
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Alta Gamma
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'tienda/img/close-icon.svg'%}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Autos 4x4 y SUV</h2>
+                                    <p class="item-intro text-muted">Especialistas en camionetas todo terreno como 4x4 y tambien categoria SUV.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'tienda/img/portfolio/3.jpg'%}" alt="..." />
+                                    <p>Los mecánicos especializados en nuestros talleres mecánicos de vehículos 4x4 o SUV utilizan herramientas y equipos especializados de última generación para realizar diagnósticos precisos y solucionar cualquier tipo de falla mecánica o eléctrica que pueda presentarse en estos vehículos. Es importante destacar que los vehículos 4x4 o SUV suelen tener sistemas de tracción en las cuatro ruedas y otros componentes específicos que requieren una capacitación especializada para su diagnóstico y reparación. Los mecánicos especializados en talleres mecánicos de vehículos 4x4 o SUV tienen la experiencia y conocimientos necesarios para realizar reparaciones y solucionar cualquier falla mecánica o eléctrica que pueda presentarse en estos vehículos.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Marca:</strong>
+                                            Ford F-150 Raptor
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Autos 4x4
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'tienda/img/close-icon.svg'%}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Autos Clásicos</h2>
+                                    <p class="item-intro text-muted">Especialistas en restauraciones de autos clasicos convencionales, deportivo y de lujo.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'tienda/img/portfolio/4.jpg'%}" alt="..." />
+                                    <p> En nuestros talleres de clasicos, cuentan con mecánicos altamente capacitados y experimentados en la restauración y reparación de vehículos clásicos antiguos, lo que les permite brindar un servicio de alta calidad y precisión. Los vehículos clásicos antiguos, por lo general, son modelos que han sido fabricados hace varias décadas y pueden presentar fallas específicas relacionadas con su antigüedad y el desgaste que han experimentado con el tiempo. Además, estos vehículos suelen contar con sistemas mecánicos y eléctricos diferentes a los vehículos modernos, lo que puede requerir herramientas y equipos especializados para su diagnóstico y reparación. Es importante destacar que los vehículos clásicos antiguos suelen requerir una restauración completa y minuciosa para que puedan funcionar correctamente. Los mecánicos especializados en talleres mecánicos de vehículos clásicos antiguos tienen la experiencia y los conocimientos necesarios para realizar reparaciones y restauraciones de manera efectiva, lo que permite devolver a estos vehículos su funcionalidad y belleza original. </p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Marca:</strong>
+                                            Ford Mustang 289 Coupe.
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Autos Clásicos Deportivos.
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'tienda/img/close-icon.svg'%}"alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Autos Americanos</h2>
+                                    <p class="item-intro text-muted">Especialistas en autos Muscle de gran motor y muchos caballos de fuerza.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'tienda/img/portfolio/5.jpg'%}" alt="..." />
+                                    <p>Nuestros mecánicos especializados en talleres mecánicos de vehículos muscle o americanos utilizan herramientas y equipos específicos para diagnosticar y solucionar cualquier tipo de falla mecánica o eléctrica que pueda presentarse en estos vehículos. Además, estos talleres mecánicos cuentan con repuestos y piezas originales que son difíciles de encontrar, lo que permite garantizar que las reparaciones se realicen con materiales de la mejor calidad y respetando la originalidad del vehículo.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Marca:</strong>
+                                            Dodge Challenger R/T.
+                                        </li>
+                                        <li>
+                                            <strong>categoria:</strong>
+                                            Autos Muscle
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'tienda/img/close-icon.svg'%}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Autos Personalizados</h2>
+                                    <p class="item-intro text-muted">Especialistas en el tunning de tu vehiculo contamos con una amplia gamma de body kits.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'tienda/img/portfolio/6.jpg'%}" alt="..." />
+                                    <p>En nuestro taller mecánico especializado en personalización tunning y body shop puede solucionar cualquier tipo de falla mecánica o eléctrica que pueda presentarse en vehículos personalizados. Los vehículos personalizados son modelos que se destacan por su estilo distintivo y único, ya que han sido modificados para reflejar la personalidad y los gustos de su propietario. Los mecánicos de nuestros talleres mecánicos especializados en personalización tunning y body shop cuentan con la experiencia y los conocimientos necesarios para diagnosticar y solucionar cualquier tipo de falla mecánica o eléctrica que pueda presentarse en estos vehículos personalizados. Además, estos talleres mecánicos suelen contar con herramientas y equipos especializados que les permiten llevar a cabo reparaciones y mantenimiento de manera efectiva, incluso en vehículos que han sido personalizados de manera extensa.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Marca:t</strong>
+                                            Porsche Cayman
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Auto Personalizado Alta gamma
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'tienda/js/scripts.js'%}" ></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
